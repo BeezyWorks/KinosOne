@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="General Settings">
+    <ListPreference 
+        android:key="nusach"
+        android:entries="@array/nusachList"
+        android:entryValues="@array/nusachSetting"
+        android:title="Nusach"
+        android:dialogLayout="@layout/listitems"
+        android:defaultValue="0"
+        android:dialogMessage="Select nusach" 
+        android:summary="Note: Nusach can also be changed from the luach zmanim by tapping the nusach title"
+        />
+    
+    
+    <CheckBoxPreference 
+        android:key="Silence"
+        android:title="Silence while davening"
+        android:summaryOn="Device will be silenced when siddur is open"
+         android:summaryOff="Device will not be silenced"
+        android:defaultValue="true"/>
+    
+ 
+    <CheckBoxPreference 
+        android:key="inIsrael"
+        android:title="In Israel"
+        android:summaryOn="You are in Israel"
+         android:summaryOff="Check if you are in Israel"
+        android:defaultValue="false"/>
+    
+
+     <CheckBoxPreference 
+         android:key="modernAsh"
+         android:title="Show later additions (Ashkenaz)"
+         android:summary="Long press nusach indicator to toggle"
+         />
+    
+	</PreferenceCategory>
+	
+    <PreferenceCategory android:title="Gesture Controls" >
+        <CheckBoxPreference 
+        android:key="swipe"
+        android:title="Enable Gesture Controls"
+        android:summaryOn="Gesture Controls are enabled"
+        android:summaryOff="Gesture Controls are disabled"
+        android:defaultValue="true"      
+        />
+        <CheckBoxPreference 
+        android:key="longPress"
+        android:dependency="swipe"
+        android:title="Long press to exit"
+        android:summaryOn="Long press is enabled"
+        android:summaryOff="Long press is disabled"
+        android:defaultValue="true"
+        />
+        
+        <CheckBoxPreference 
+        android:key="doubleTap"
+        android:dependency="swipe"
+        android:title="Double tap to toggle fullscreen"
+        android:summaryOn="Double tap is enabled"
+        android:summaryOff="Double tap is disabled"
+        android:defaultValue="true"
+        />
+        
+        <CheckBoxPreference 
+        android:key="singleTap"
+        android:dependency="swipe"
+        android:title="Single tap to toggle action bar"
+        android:summaryOn="Single tap is enabled"
+        android:summaryOff="Single tap is disabled"
+        android:defaultValue="true"
+        />
+        
+         <CheckBoxPreference 
+        android:key="pinch"
+        android:dependency="swipe"
+        android:title="Pinch to zoom"
+        android:summaryOn="Pinching is enabled"
+        android:summaryOff="Pinching is disabled"
+        android:defaultValue="true"
+        />
+        
+        <EditTextPreference
+            android:defaultValue="80"
+            android:dependency="swipe"
+            android:key="swipeSense"
+            android:title="Swipe sensitivity"
+            android:summary="Swipe length in pixels" />
+        
+        </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Display Settings" >
+            <ListPreference 
+        android:key="font"
+        android:entries="@array/fontList"
+        android:entryValues="@array/fontValues"
+        android:title="Font"
+        android:dialogLayout="@layout/listitems"
+        android:defaultValue="HadasimCLM-Regular.ttf"
+        android:dialogMessage="Select font"
+        />
+    
+    <ListPreference 
+        android:key="size"
+        android:entries="@array/sizeList"
+        android:entryValues="@array/sizeValues"
+        android:title="Text Size"
+        android:dialogLayout="@layout/listitems"
+        android:defaultValue="30"
+        android:dialogMessage="Select text size"
+        />
+    
+    <ListPreference 
+        android:key="style"
+        android:entries="@array/themeList"
+        android:entryValues="@array/themeValue"
+        android:title="Theme"
+        android:dialogLayout="@layout/listitems"
+        android:defaultValue="0"
+        android:dialogMessage="Select theme"
+        />
+    
+    <ListPreference 
+        android:key="bedtimestyle"
+        android:entries="@array/themeList"
+        android:entryValues="@array/themeValue"
+        android:title="Krias Shma al HaMita Theme"
+        android:dialogLayout="@layout/listitems"
+        android:defaultValue="1"
+        android:dialogMessage="Select theme for krias shma al hamita"
+        />
+    
+    
+    
+    <CheckBoxPreference 
+        android:key="portrait"
+        android:title="Lock in portrait mode"
+        android:summaryOn="Rotation is disabled"
+        android:summaryOff="Check to disable rotation"
+        android:defaultValue="false"
+        />
+        
+    <CheckBoxPreference 
+        android:key="screenOn"
+        android:title="Keep screen on"
+        android:summaryOn="Screen will be kept on"
+        android:summaryOff="Screen will not be kept on"
+        android:defaultValue="false"
+        />
+    
+    <CheckBoxPreference 
+        android:key="animation"
+        android:title="Enable transition animations"
+        android:summaryOn="Animations are enabled"
+        android:summaryOff="Animations are disabled"
+        android:defaultValue="true"
+        />
+        
+    </PreferenceCategory>
+    
+<PreferenceCategory 
+        android:title="Zmanim Settings" 
+        android:summary="Options can be changed on the Luach as well"   
+        >
+    
+    <CheckBoxPreference 
+        android:key="shakey"
+        android:title="Shake to show quick Zmanim"
+        android:defaultValue="true"
+        />
+    <SwitchPreference 
+        android:key="amZman"
+        android:title="Display option"
+        android:switchTextOn="12 Hrs"
+        android:switchTextOff="24 Hrs"
+        android:defaultValue="false"
+        />
+    <SwitchPreference 
+        android:key="alosGreen"
+        android:title="First Zman"
+        android:defaultValue="true"
+        android:switchTextOn="@string/alos"
+        android:switchTextOff="@string/mishyakir"
+        />
+    <SwitchPreference 
+        android:key="rebeinuTom"
+        android:title="Time for tzeis"
+        android:switchTextOn="@string/rabeinuTom"
+        android:switchTextOff="@string/tzeisShort"
+        />
+    
+    
+    <SwitchPreference 
+        android:key="shmaZman"
+        android:title="Sof Zman Krias Shma"
+        android:switchTextOn="@string/Gra"
+        android:switchTextOff="@string/Mga"
+        android:defaultValue="true"
+        />
+    
+   
+    
+    </PreferenceCategory>
+       
+    
+</PreferenceScreen>

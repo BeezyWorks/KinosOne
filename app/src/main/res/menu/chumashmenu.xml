@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+      
+      <item
+       android:id="@+id/displayOptions"
+       android:icon="@drawable/ic_action_settings"
+       android:showAsAction="ifRoom"
+       android:title="Display Options"/>
+   
+   <item 
+	    android:id="@+id/ about"
+	    android:title="About"
+	    android:showAsAction="never"
+	    />
+   
+   <item 
+        android:id="@+id/SettingsButton"
+        android:showAsAction="never"
+        android:title="Settings"/>
+   
+   <item
+       android:id="@+id/ close"
+       android:showAsAction="never"
+       android:title="Exit"/>
+
+</menu>

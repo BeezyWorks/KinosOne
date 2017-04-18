@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/ manualLocCheck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ locationPrefs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ longTitle"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Set Longitude" />
+
+        <EditText
+            android:id="@+id/ longInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+        <TextView
+             android:paddingTop="20dp"
+            android:id="@+id/ latTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Set Latitude" />
+
+        <EditText
+            android:id="@+id/ latInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+             android:paddingTop="20dp"
+            android:id="@+id/ elevationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Set Elevation" />
+
+        <EditText
+            android:id="@+id/ elevationInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

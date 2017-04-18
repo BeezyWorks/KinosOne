@@ -1,0 +1,313 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     xmlns:ads="http://schemas.android.com/apk/res-auto" >
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" 
+>
+ 
+<ScrollView android:layout_width="fill_parent"
+    	android:id="@+id/content_frame"   
+        android:layout_height="fill_parent"
+        android:background="@color/sepia"
+        >
+        
+<RelativeLayout
+    android:id="@+id/rLayout"
+    android:layout_width="match_parent"
+    android:layout_height="775dp"
+    android:background="@color/sepia"
+    android:orientation="vertical"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"
+    android:paddingTop="25sp" >
+
+    <TextView
+        android:id="@+id/Alos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:text="0:00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/mincha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/weeksParsha3"
+        android:layout_below="@+id/weeksParsha3"
+        android:text="00:00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tzeis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/shkia"
+        android:layout_alignBottom="@+id/shkia"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignRight="@+id/weeksParsha7"
+        android:text="00:00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Hebrewdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="HebrewDate"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/shma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/weeksParsha1"
+        android:text="0:00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/weeksParsha3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Alos"
+        android:layout_marginTop="41dp"
+        android:text="@string/Mincha_gedola" />
+
+    <TextView
+        android:id="@+id/weeksParsha7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tzeis"
+        android:layout_alignParentLeft="true"
+        android:text="@string/tzeis" />
+
+    <TextView
+        android:id="@+id/Mussaf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Rain"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/neitz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:text="0:00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Rain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Summer"
+        android:layout_centerHorizontal="true"
+        android:text="Rain"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Omer"
+        android:layout_marginTop="114dp"
+        android:text="@string/Alos" />
+
+    <TextView
+        android:id="@+id/Omer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Mussaf"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/shkia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mincha"
+        android:layout_alignBottom="@+id/mincha"
+        android:layout_alignRight="@+id/neitz"
+        android:text="00:00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Chanuka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Omer"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/weeksParsha5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/weeksParsha7"
+        android:layout_alignBottom="@+id/weeksParsha7"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/Shkias_hachama" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/weeksParsha1"
+        android:layout_alignBottom="@+id/weeksParsha1"
+        android:layout_alignRight="@+id/Rain"
+        android:layout_centerVertical="true"
+        android:text="@string/Neitz" />
+
+    <TextView
+        android:id="@+id/Summer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weeksParsha"
+        android:layout_centerHorizontal="true"
+        android:text="Summer"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/weeksParsha1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:text="@string/SofZman" />
+
+    <TextView
+        android:id="@+id/DafYomi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daf"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/CandleLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/CandleLightTxt"
+        android:layout_below="@+id/CandleLightTxt"
+        android:text="00:00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/motzash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MotzashTxt"
+        android:layout_alignTop="@+id/CandleLight"
+        android:text="00:00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/CandleLightTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/mincha"
+        android:layout_below="@+id/mincha"
+        android:layout_marginTop="37dp"
+        android:text="Candle Lighting" />
+
+    <TextView
+        android:id="@+id/MotzashTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CandleLightTxt"
+        android:layout_alignBottom="@+id/CandleLightTxt"
+        android:layout_alignLeft="@+id/tzeis"
+        android:text="Motzash" />
+
+    <TextView
+        android:id="@+id/ChatzosTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CandleLightTxt"
+        android:layout_alignBottom="@+id/CandleLightTxt"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_centerVertical="true"
+        android:text="ChatzosText" />
+
+    <TextView
+        android:id="@+id/Chatzos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CandleLight"
+        android:layout_alignBottom="@+id/CandleLight"
+        android:layout_alignLeft="@+id/shkia"
+        android:layout_centerVertical="true"
+        android:text="0:00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/weeksParsha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nusach"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:text="Parsha"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Nusach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Hebrewdate"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center|start"
+        android:text="Nusach"
+        android:textColor="#5D8AA8"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Chatzos"
+        android:layout_marginTop="58dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Connection" />
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>
+   
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#666"
+        android:dividerHeight="1dp"
+        android:background="#333"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        />
+ 
+</android.support.v4.widget.DrawerLayout>
